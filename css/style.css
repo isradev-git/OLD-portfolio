@@ -947,6 +947,9 @@ body .winbox .wb-body .contact-content .contact-container form textarea {
     width: 26rem;
     padding: 0.5rem;
   }
+  header {
+    margin-top: -3rem;
+  }
   header .container {
     height: 100vh;
   }
@@ -954,7 +957,6 @@ body .winbox .wb-body .contact-content .contact-container form textarea {
     grid-template-columns: 5px repeat(3, 1fr) 5px;
     grid-template-rows: repeat(5, 1fr) 5%;
     gap: 1.2rem;
-    margin-bottom: 2rem;
   }
   header .container .main_header .perfil {
     grid-column: 2/4;
