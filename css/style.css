@@ -509,12 +509,12 @@ main {
   border-bottom: 1px #ffffff solid;
 }
 .winbox .wb-body .tech-content {
-  transform: scale(0.7);
+  transform: scale(0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  margin-top: -9rem;
+  height: 30vh;
+  margin-top: -4rem;
 }
 .winbox .wb-body .tech-content h2 {
   padding: 2rem 0 1rem 0;
@@ -522,7 +522,7 @@ main {
   color: #be5cff;
 }
 .winbox .wb-body .tech-content .card {
-  width: 95vw;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-wrap: wrap;
