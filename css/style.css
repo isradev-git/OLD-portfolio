@@ -884,6 +884,25 @@ body .winbox .wb-body .work-content .div-all .options .option:not(.active) .labe
     border: none;
     padding: 3rem 2rem 2rem 2rem;
   }
+  body .winbox .wb-body .tech-content .card span {
+    padding: 1rem;
+  }
+  body .winbox .wb-body .tech-content .card span h3 {
+    font-size: 2rem;
+  }
+  body .winbox .wb-body .tech-content .card span img {
+    width: 4rem;
+  }
+  body .winbox .wb-body .tech-content .card span .sass {
+    width: 5rem;
+  }
+  body .winbox .wb-body .tech-content .card span .php {
+    width: 6rem;
+  }
+  body .winbox .wb-body .tech-content .card span .npm {
+    margin-top: 1rem;
+    width: 7rem;
+  }
   body .winbox .wb-body .work-content .botones {
     display: flex;
   }
