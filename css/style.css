@@ -214,7 +214,7 @@ header .container .main_header .perfil {
   padding: 2rem 2rem;
   height: auto;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -244,7 +244,7 @@ header .container .main_header .informacion {
   grid-row: 4/6;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -274,7 +274,7 @@ header .container .main_header nav .sobremi {
   flex-direction: column;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -301,7 +301,7 @@ header .container .main_header nav .tecnologias {
   align-items: center;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -328,7 +328,7 @@ header .container .main_header nav .proyectos {
   align-items: center;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -355,7 +355,7 @@ header .container .main_header nav .contacto {
   align-items: center;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -386,7 +386,7 @@ header .container .main_header .reloj {
   height: auto;
   text-align: center;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -407,7 +407,7 @@ header .container .main_header .redes {
   flex-wrap: nowrap;
   width: auto;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -431,7 +431,7 @@ header .container .main_header .principal {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -451,7 +451,7 @@ header .container .main_header .footer {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 5px 8px 0 #be5cff;
+  box-shadow: 0 5px 8px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -529,7 +529,7 @@ main {
   align-items: stretch;
   justify-content: space-around;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 3px 6px 0 #be5cff;
+  box-shadow: 0 3px 6px 0 rgba(0, 238, 255, 0.4745098039);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -570,7 +570,7 @@ main {
 }
 .winbox .wb-body .work-content .botones button {
   margin: 0 1.3rem;
-  background-color: #be5cff;
+  background-color: rgba(0, 238, 255, 0.4745098039);
   cursor: pointer;
 }
 .winbox .wb-body .work-content .botones .custom-btn {
