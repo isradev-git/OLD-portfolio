@@ -18,7 +18,7 @@ botonAbout.addEventListener("click", () => {
   const iconoAboutBox = new WinBox({
     title: "ABOUT",
     width: "100%",
-    height: "100%",
+    height: "98%",
     mount: aboutContent,
     onfocus: function () {
       this.setBackground("rgba(0, 0, 0, 0.85)");
@@ -32,7 +32,7 @@ botonTech.addEventListener("click", () => {
   const iconoTechBox = new WinBox({
     title: "TECHNOLOGIES",
     width: "100%",
-    height: "100%",
+    height: "98%",
     mount: techContent,
     onfocus: function () {
       this.setBackground("rgba(0, 0, 0, 0.85)");
@@ -46,7 +46,7 @@ botonWork.addEventListener("click", () => {
   const iconoWorkBox = new WinBox({
     title: "PROJECTS",
     width: "100%",
-    height: "100%",
+    height: "98%",
     mount: workContent,
     onfocus: function () {
       this.setBackground("rgba(0, 0, 0, 0.85)");
@@ -60,7 +60,7 @@ botonContact.addEventListener("click", () => {
   const iconoContactBox = new WinBox({
     title: "CONTACT",
     width: "100%",
-    height: "100%",
+    height: "98%",
     mount: contactContent,
     onfocus: function () {
       this.setBackground("rgba(0, 0, 0, 0.85)");
