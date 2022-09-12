@@ -956,7 +956,7 @@ body .winbox .wb-body .contact-content .contact-container form textarea {
     grid-template-columns: 5px repeat(3, 1fr) 5px;
     grid-template-rows: repeat(5, 1fr) 5%;
     gap: 1.2rem;
-    margin: 0 -2rem 2rem -2rem;
+    margin-bottom: 2rem;
   }
   header .container .main_header .perfil {
     grid-column: 2/4;
