@@ -198,7 +198,7 @@ header .container .main_header {
   height: auto;
   display: grid;
   grid-template-columns: 1rem repeat(5, 1fr) 1rem;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr) 4rem;
   gap: 3rem;
   justify-items: stretch;
   align-items: stretch;
@@ -234,8 +234,7 @@ header .container .main_header .perfil span img {
   width: 8rem;
 }
 header .container .main_header .perfil h3 {
-  text-transform: uppercase;
-  font-family: "anurati";
+  font-size: 4rem;
 }
 header .container .main_header .informacion {
   display: flex;
@@ -622,104 +621,74 @@ main {
   background-color: #be5cff;
 }
 .winbox .wb-body .work-content .div-all {
-  display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 2rem;
 }
 .winbox .wb-body .work-content .div-all h2 {
   margin-top: 1.5rem;
 }
-.winbox .wb-body .work-content .div-all .options {
-  margin-top: 1rem;
+.winbox .wb-body .work-content .div-all .project-cards {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: stretch;
-  overflow: hidden;
-  width: 90rem;
-  height: 40rem;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
-.winbox .wb-body .work-content .div-all .options .option {
+.winbox .wb-body .work-content .div-all .project-cards .card-project {
   position: relative;
-  overflow: hidden;
-  width: 6rem;
-  margin: 10px;
-  background-color: rgba(66, 66, 66, 0.7882352941);
-  cursor: pointer;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.winbox .wb-body .work-content .div-all .options .option.active {
-  flex-grow: 10000;
-  transform: scale(1);
-  max-width: 60rem;
-  border-radius: 4rem;
-}
-.winbox .wb-body .work-content .div-all .options .option.active .label {
-  bottom: 20px;
-  left: 20px;
-}
-.winbox .wb-body .work-content .div-all .options .option.active .label .info > div {
-  left: 0px;
-  opacity: 1;
-}
-.winbox .wb-body .work-content .div-all .options .option:not(.active) {
-  flex-grow: 0.5;
-  border-radius: 3rem;
-}
-.winbox .wb-body .work-content .div-all .options .option:not(.active) .label {
-  bottom: 1rem;
-  left: 1rem;
-}
-.winbox .wb-body .work-content .div-all .options .option:not(.active) .label .icon {
-  width: 4rem;
-  height: 4rem;
-}
-.winbox .wb-body .work-content .div-all .options .option:not(.active) .label .icon img {
-  width: 2rem;
-  height: 2rem;
-}
-.winbox .wb-body .work-content .div-all .options .option:not(.active) .label .info > div {
-  display: none;
-}
-.winbox .wb-body .work-content .div-all .options .option .label {
-  display: flex;
-  position: absolute;
-  right: 0;
-  height: 4rem;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.winbox .wb-body .work-content .div-all .options .option .label .icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 100%;
-  background-color: #ffffff;
-}
-.winbox .wb-body .work-content .div-all .options .option .label .icon img {
-  width: 2rem;
-  height: 2rem;
-}
-.winbox .wb-body .work-content .div-all .options .option .label .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10px;
+  width: 25rem;
+  height: 30rem;
   color: #ffffff;
-  white-space: pre;
+  background-color: rgba(201, 201, 201, 0.7882352941);
+  border-radius: 20px;
+  overflow: hidden;
 }
-.winbox .wb-body .work-content .div-all .options .option .label .info > div {
-  position: relative;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+.winbox .wb-body .work-content .div-all .project-cards .card-project img {
+  width: 100%;
+  height: 100%;
 }
-.winbox .wb-body .work-content .div-all .options .option .label .info .main {
-  font-weight: bold;
-  font-size: 1.2rem;
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(27, 27, 27, 0.8901960784);
+  transform: translateY(18rem);
+  transition: transform 0.25s;
 }
-.winbox .wb-body .work-content .div-all .options .option .label .info .sub {
-  transition-delay: 0.1s;
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content h3 {
+  text-align: center;
+  margin-top: -0.4rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content span img {
+  width: 2rem;
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project:hover .card__content {
+  transform: translateY(0);
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project:hover p {
+  opacity: 1;
+  transition-delay: 0.25s;
 }
 .winbox .wb-body .work-content .div-invisible {
   display: none;
@@ -772,34 +741,11 @@ footer {
     padding: 3rem 2rem 2rem 2rem;
     border: none;
   }
-  body .winbox .wb-body .work-content .div-all .options {
-    width: 60rem;
-    height: 40rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option {
-    margin: 7px;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label {
-    bottom: 1rem;
-    left: 1rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label .icon {
-    width: 4rem;
-    height: 4rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label .info .main,
-body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label .info .sub {
-    font-size: 1rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option .icon {
-    width: 4rem;
-    height: 4rem;
-  }
   header .container {
     height: 100vh;
   }
   header .container .main_header {
-    grid-template-columns: 5% repeat(3, 1fr) 5%;
+    grid-template-columns: 5% repeat(3, 1fr) 4%;
     grid-template-rows: repeat(4, 1fr);
   }
   header .container .main_header .perfil {
@@ -807,7 +753,7 @@ body .winbox .wb-body .work-content .div-all .options .option:not(.active) .labe
     grid-row: 1/3;
   }
   header .container .main_header .perfil h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
   header .container .main_header nav {
@@ -915,49 +861,6 @@ body .winbox .wb-body .work-content .div-all .options .option:not(.active) .labe
   body .winbox .wb-body .work-content .botones #btn-landing {
     font-size: 1rem;
   }
-  body .winbox .wb-body .work-content .div-all .options {
-    width: 38.5rem;
-    height: 35rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option {
-    width: 3rem;
-    margin: 2px;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option.active .label {
-    bottom: 7px;
-    left: 10px;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option.active .label .icon {
-    width: 3rem;
-    height: 3rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option.active .label .icon img {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option.active .label .info .main,
-body .winbox .wb-body .work-content .div-all .options .option.active .label .info .sub {
-    font-size: 1rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label {
-    bottom: 0;
-    left: 2px;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label .icon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label .icon img {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option:not(.active) .label .info {
-    display: none;
-  }
-  body .winbox .wb-body .work-content .div-all .options .option .label .icon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
   body .winbox .wb-body .contact-content .contact-container {
     padding: 1rem 1rem 3rem 1rem;
   }
@@ -974,7 +877,7 @@ body .winbox .wb-body .contact-content .contact-container form textarea {
   }
   header .container .main_header {
     grid-template-columns: 5px repeat(3, 1fr) 5px;
-    grid-template-rows: repeat(5, 1fr) 5%;
+    grid-template-rows: repeat(5, 1fr) 4%;
     gap: 1.2rem;
   }
   header .container .main_header .perfil {
@@ -989,7 +892,7 @@ body .winbox .wb-body .contact-content .contact-container form textarea {
     width: 6rem;
   }
   header .container .main_header .perfil h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   header .container .main_header nav {
@@ -1046,7 +949,7 @@ body .winbox .wb-body .contact-content .contact-container form textarea {
     grid-row: 5/6;
   }
   header .container .main_header .reloj p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   header .container .main_header .footer {
     grid-column: 2/5;
