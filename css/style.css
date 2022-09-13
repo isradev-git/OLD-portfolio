@@ -565,7 +565,7 @@ main {
   align-content: center;
 }
 .winbox .wb-body .work-content .botones {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .winbox .wb-body .work-content .botones button {
   margin: 0 1.3rem;
@@ -634,7 +634,7 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .winbox .wb-body .work-content .div-all .project-cards .card-project {
   position: relative;
@@ -856,7 +856,6 @@ footer {
     width: 6.5rem;
     height: 2rem;
     font-size: 1.3rem;
-    margin: 1.5rem;
   }
   body .winbox .wb-body .work-content .botones #btn-landing {
     font-size: 1rem;
