@@ -188,7 +188,7 @@ body .background span:nth-child(9) {
 }
 
 header .container {
-  transform: scale(0.85);
+  transform: scale(0.8);
   height: 100vh;
   display: flex;
   justify-content: center;
