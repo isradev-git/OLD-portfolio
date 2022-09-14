@@ -787,16 +787,15 @@ main {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 60%;
+  height: 100%;
   width: 100%;
   padding: 1rem;
   background-color: rgba(27, 27, 27, 0.8901960784);
-  transform: translateY(18rem);
-  transition: transform 0.25s;
+  transform: translateY(30rem);
+  transition: transform 0.35s;
 }
 .winbox .wb-body .work-content .div-all .project-cards .card-project .card__content h3 {
   text-align: center;
-  margin-top: -0.4rem;
   font-size: 2rem;
   color: #ffffff;
 }
@@ -805,7 +804,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+  margin: 1rem 0;
 }
 .winbox .wb-body .work-content .div-all .project-cards .card-project .card__content span img {
   width: 2rem;
@@ -813,9 +812,23 @@ main {
 .winbox .wb-body .work-content .div-all .project-cards .card-project .card__content p {
   text-align: center;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1.4rem;
   opacity: 0;
   transition: opacity 0.5s;
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content a {
+  position: absolute;
+  bottom: 10%;
+  left: 43%;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  background-color: #be5cff;
+  border-radius: 50%;
+}
+.winbox .wb-body .work-content .div-all .project-cards .card-project .card__content a:hover {
+  background-color: transparent;
+  border: 1px solid #be5cff;
+  color: #be5cff;
 }
 .winbox .wb-body .work-content .div-all .project-cards .card-project:hover .card__content {
   transform: translateY(0);
