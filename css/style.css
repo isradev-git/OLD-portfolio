@@ -692,7 +692,7 @@ main {
   width: 9rem;
 }
 .winbox .wb-body .work-content {
-  transform: scale(0.95);
+  transform: scale(0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
