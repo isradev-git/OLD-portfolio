@@ -234,7 +234,141 @@ header .container .main_header .perfil span img {
   width: 8rem;
 }
 header .container .main_header .perfil h3 {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
   font-size: 4rem;
+  letter-spacing: 10px;
+  animation: text-flicker 3s linear infinite;
+}
+header .container .main_header .perfil h3 #offset {
+  animation: letter-flicker 2s linear infinite;
+}
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px #be5cff;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px #00eeff;
+    -moz-box-shadow: 0px 0px 78px 4px #00eeff;
+    box-shadow: 0px 0px 78px 4px #00eeff;
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px #00eeff;
+    -moz-box-shadow: 0px 0px 78px 4px #00eeff;
+    box-shadow: 0px 0px 78px 4px #00eeff;
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px #00eeff;
+    -moz-box-shadow: 0px 0px 78px 4px #00eeff;
+    box-shadow: 0px 0px 78px 4px #00eeff;
+  }
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px #00eeff;
+    -moz-box-shadow: 0px 0px 78px 4px #00eeff;
+    box-shadow: 0px 0px 78px 4px #00eeff;
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px #00eeff;
+    -moz-box-shadow: 0px 0px 78px 4px #00eeff;
+    box-shadow: 0px 0px 78px 4px #00eeff;
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px #00eeff;
+    -moz-box-shadow: 0px 0px 78px 4px #00eeff;
+    box-shadow: 0px 0px 78px 4px #00eeff;
+  }
+}
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #be5cff;
+  }
 }
 header .container .main_header .informacion {
   display: flex;
