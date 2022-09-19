@@ -618,7 +618,7 @@ main {
   background: transparent;
 }
 .winbox .wb-body .about-content {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6705882353);
   margin-top: -5rem;
   height: 100vh;
   display: flex;
@@ -627,7 +627,7 @@ main {
   justify-content: space-around;
 }
 .winbox .wb-body .about-content img {
-  width: 30rem;
+  width: 35rem;
 }
 .winbox .wb-body .about-content h2 span {
   color: #ff00ff;
@@ -886,11 +886,12 @@ footer {
   }
   body .winbox .wb-body .about-content img {
     margin-top: 2rem;
-    width: 20rem;
+    width: 24rem;
   }
   body .winbox .wb-body .about-content .descripcion-personal {
     width: 80%;
     height: 50%;
+    margin: -10rem 0 0 0;
     padding: 3rem 2rem 2rem 2rem;
     border: none;
   }
@@ -975,7 +976,7 @@ footer {
   }
   body .winbox .wb-body .about-content img {
     margin-top: 2rem;
-    width: 15rem;
+    width: 18rem;
   }
   body .winbox .wb-body .about-content .descripcion-personal {
     width: 90%;
