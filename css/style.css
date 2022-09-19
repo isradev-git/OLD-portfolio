@@ -982,6 +982,7 @@ footer {
     width: 90%;
     height: 70%;
     border: none;
+    margin-top: 1rem;
     padding: 3rem 2rem 2rem 2rem;
   }
   body .winbox .wb-body .tech-content .card span {
