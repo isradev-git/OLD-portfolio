@@ -14,7 +14,7 @@ const btn = document.getElementById('button');
          emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                btn.value = 'Enviar mensaje';
-               alert('Mensaje enviado correctamente!');
+               alert('Mensaje enviado correctamente, te contestare en menos de 24h. Gracias por la confianza.¡Ten un muy buen dia!');
             }, (err) => {
                btn.value = 'Enviar mensaje';
                alert(JSON.stringify(err));
