@@ -840,6 +840,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+.winbox .wb-body .contact-content .contact-form h2 span {
+  color: #ff00ff;
+}
 .winbox .wb-body .contact-content .contact-form input,
 .winbox .wb-body .contact-content .contact-form textarea {
   width: 100%;
@@ -998,6 +1001,14 @@ footer {
   }
   body .winbox .wb-body .contact-content .contact-container {
     padding: 1rem 1rem 3rem 1rem;
+  }
+  body .winbox .wb-body .contact-content .contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .winbox .wb-body .contact-content .contact-container form h2 {
+    font-size: 2rem;
   }
   body .winbox .wb-body .contact-content .contact-container form input,
 body .winbox .wb-body .contact-content .contact-container form textarea {
