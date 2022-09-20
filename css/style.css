@@ -699,60 +699,48 @@ main {
   align-content: center;
 }
 .winbox .wb-body .work-content .botones {
-  margin-top: 1rem;
+  margin: 0 3rem 0 3rem;
 }
-.winbox .wb-body .work-content .botones button {
-  margin: 0 1.3rem;
-  background-color: rgba(255, 0, 255, 0.7333333333);
+.winbox .wb-body .work-content .botones .button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #ff00ff;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff00ff -3px 0 inset;
+  box-sizing: border-box;
+  color: #ffffff;
   cursor: pointer;
-}
-.winbox .wb-body .work-content .botones .custom-btn {
-  color: #000000;
-  width: 10rem;
-  height: 3rem;
-  border: 1px solid rgba(255, 0, 255, 0.7333333333);
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
   position: relative;
-  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
 }
-.winbox .wb-body .work-content .botones .btn-3 {
-  background: rgba(255, 0, 255, 0.7333333333);
-  padding: 0;
-  border: none;
-  z-index: 2;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.winbox .wb-body .work-content .botones .button-30:focus {
+  box-shadow: #ffffff 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ffffff 0 -3px 0 inset;
 }
-.winbox .wb-body .work-content .botones .btn-3:hover {
-  background-color: transparent;
-  color: rgba(255, 0, 255, 0.7333333333);
-  box-shadow: 0 5px 3px -3px rgba(255, 0, 255, 0.7333333333), 0 -5px 3px -3px rgba(255, 0, 255, 0.7333333333), 0 5px 3px -3px rgba(255, 0, 255, 0.7333333333), 0 -5px 3px -3px rgba(255, 0, 255, 0.7333333333);
+.winbox .wb-body .work-content .botones .button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ffffff 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
-.winbox .wb-body .work-content .botones .btn-3:before,
-.winbox .wb-body .work-content .botones .btn-3:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  width: 100%;
-  height: 50%;
-  right: 0;
-  z-index: -1;
-  background: rgba(255, 0, 255, 0.7333333333);
-  box-shadow: 0 0 5px rgba(255, 0, 255, 0.7333333333);
-  transition: all 0.3s ease;
-}
-.winbox .wb-body .work-content .botones .btn-3:before {
-  top: 0;
-}
-.winbox .wb-body .work-content .botones .btn-3:after {
-  bottom: 0;
-}
-.winbox .wb-body .work-content .botones .btn-3:hover:before,
-.winbox .wb-body .work-content .botones .btn-3:hover:after {
-  height: 0;
-  background-color: rgba(255, 0, 255, 0.7333333333);
+.winbox .wb-body .work-content .botones .button-30:active {
+  box-shadow: #ffffff 0 3px 7px inset;
+  transform: translateY(2px);
 }
 .winbox .wb-body .work-content .div-all {
   flex-direction: column;
@@ -1005,15 +993,8 @@ footer {
     width: 7rem;
   }
   body .winbox .wb-body .work-content .botones {
+    margin-top: -6rem;
     display: flex;
-  }
-  body .winbox .wb-body .work-content .botones .custom-btn {
-    width: 6.5rem;
-    height: 2rem;
-    font-size: 1.3rem;
-  }
-  body .winbox .wb-body .work-content .botones #btn-landing {
-    font-size: 1rem;
   }
   body .winbox .wb-body .contact-content .contact-container {
     padding: 1rem 1rem 3rem 1rem;
